@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Gears Team #14791</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ocean-background"></div>
+    <div id="fish-container"></div>
+    <div class="header">
+        <img src="GGlogo.png" alt="Galactic Gears Logo" class="logo">
+        <h1>Galactic Gears Team #14791</h1>
+    </div>
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('team')">Our Team</a>
+        <a href="javascript:void(0)" onclick="showSection('projects')">Projects</a>
+        <a href="javascript:void(0)" onclick="showSection('outreach')">Community Outreach</a>
+        <a href="javascript:void(0)" onclick="showSection('school')">Our School</a>
+    </div>
+    
+    <div id="home" class="content">
+        <h2>Galactic Gears Robotics Team!</h2>
+        <p>We are the Galactic Gears Team #14791, dedicated to building and programming innovative robots for competitions and beyond. Explore our site to learn more about our team, our projects, and how you can get involved!</p>
+        <div class="card">
+            <h3>Mission</h3>
+            <p>Our mission is to save the ocean.</p>
+        </div>
+        <div class="card">
+            <h3>Values</h3>
+            <p>We believe in teamwork, innovation, and community outreach to make a positive impact through technology.</p>
+        </div>
+    </div>
+
+    <div id="team" class="content">
+        <h2>Meet Our Team from 2024</h2>
+        <div class="card" onclick="openModal('michael-modal')">
+            <h3>Michael - Strategy and Mechanical</h3>
+        </div>
+        <div class="card" onclick="openModal('andrew-modal')">
+            <h3>Andrew - Programmer</h3>
+        </div>
+        <div class="card" onclick="openModal('ritwik-modal')">
+            <h3>Ritwik - Programmer</h3>
+        </div>
+        <div class="card" onclick="openModal('saveri-modal')">
+            <h3>Saveri - Electrical</h3>
+        </div>
+        <div class="card" onclick="openModal('jayson-modal')">
+            <h3>Jayson - Build</h3>
+        </div>
+        <div class="card" onclick="openModal('diya-modal')">
+            <h3>Diya - Social Stuff</h3>
+        </div>
+        <div class="card" onclick="openModal('finn-modal')">
+            <h3>Finn - Artwork</h3>
+        </div>
+        <div class="card" onclick="openModal('rekha-modal')">
+            <h3>Rekha - design</h3>
+        </div>
+    </div>
+
+    <div id="projects" class="content">
+        <h2>Our Projects</h2>
+        <div class="card">
+            <h3>Our Robot</h3>
+            <p>We have been working on a new robot for FTC into the deep 2024.</p>
+        </div>
+    </div>
+
+    <div id="outreach" class="content">
+        <h2>Community Outreach</h2>
+        <div class="card">
+            <h3>Can Drive</h3>
+            <p>Our team collected cans and returned them to the store.</p>
+            <p>We gave this money to an ocean conservation charity.</p>
+            <img src="Can Donation 02.JPG" alt="Can Donation" class="project-image small-image">
+            <img src="Can Donation 01.JPG" alt="Can Donation" class="project-image small-image">
+        </div>
+        <div class="card">
+            <h3>Cleaning the Beach</h3>
+            <p>We Cleaned the beack for one of our community outreach events.</p>
+            <img src="Beach Cleanup.jpg" alt="Beach Cleanup" class="project-image small-image">
+        </div>
+    </div>
+    
+    <div id="school" class="content">
+        <h2>Our School</h2>
+        <div class="card">
+            <h3>South Hills Middle School</h3>
+            <p>We are proud to represent South Hills Middle School in Michigan.</p>
+            <p>Our school supports and encourages our passion for robotics and STEM education.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Galactic Gears #14791 | South Hills Middle School, Michigan
+    </div>
+
+    <!-- Modals -->
+    <div id="michael-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('michael-modal')">&times;</span>
+            <h2>Michael</h2>
+            <p>Role: Strategy and Mechanical</p>
+            <p>One of our top strategists and decent at build.</p>
+        </div>
+    </div>
+
+    <div id="andrew-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('andrew-modal')">&times;</span>
+            <h2>Andrew</h2>
+            <p>Role: Programmer</p>
+            <p>Andrew is one of our Programmers and made this website.</p>
+        </div>
+    </div>
+
+    <div id="ritwik-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ritwik-modal')">&times;</span>
+            <h2>Ritwik</h2>
+            <p>Role: Programmer</p>
+            <p>Ritwik is one of our Programmers.</p>
+        </div>
+    </div>
+
+    <div id="saveri-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('saveri-modal')">&times;</span>
+            <h2>Saveri (ash)</h2>
+            <p>Role: Electrical</p>
+            <p>Also known as Ash, is the lead of Electrical.</p>
+        </div>
+    </div>
+
+    <div id="jayson-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('jayson-modal')">&times;</span>
+            <h2>Jayson</h2>
+            <p>Role: Build</p>
+            <p>Jayson is the lead of Build.</p>
+        </div>
+    </div>
+
+    <div id="diya-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('diya-modal')">&times;</span>
+            <h2>Diya</h2>
+            <p>Role: Head of Marketing</p>
+            <p>Diya is the head of marketing</p>
+        </div>
+    </div>
+
+    <div id="finn-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('finn-modal')">&times;</span>
+            <h2>Finn</h2>
+            <p>Role: Artwork</p>
+            <p>Finn is the head of artwork</p>
+        </div>
+    </div>
+    <div id="rekha-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rekha-modal')">&times;</span>
+            <h2>Rekha</h2>
+            <p>Role: Design</p>
+            <p>Rekha is the head of design</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
