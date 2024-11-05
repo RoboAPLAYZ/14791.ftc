@@ -83,7 +83,7 @@ body {
 
 .header h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em; /* Slightly increased from 3em */
+    font-size: 3.2em;
     text-shadow: 0 0 0px #00ffff, 0 0 10px #00ffff;
     margin: 0;
 }
@@ -106,7 +106,7 @@ body {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease;
-    font-size: 1.2em; /* Increased from 1.1em */
+    font-size: 1.2em;
 }
 
 .navbar a:hover {
@@ -121,7 +121,7 @@ body {
     animation: fadeIn 1s ease-in-out forwards;
     position: relative;
     z-index: 1;
-    font-size: 1.2em; /* Increased from 1.1em */
+    font-size: 1.2em;
 }
 
 .footer {
@@ -135,7 +135,7 @@ body {
     border-top: 2px solid #00ffff;
     box-shadow: 0 0 20px #00ffff;
     z-index: 1001;
-    font-size: 1em; /* Added font size for footer */
+    font-size: 1em;
 }
 
 .card {
@@ -147,7 +147,7 @@ body {
     transition: all 0.3s;
     cursor: pointer;
     box-shadow: 0 0 10px #00ffff;
-    font-size: 1.1em; /* Increased from 1.05em */
+    font-size: 1.1em;
     position: relative;
     z-index: 2;
 }
@@ -184,13 +184,13 @@ body {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 30px #00ffff;
-    font-size: 1.2em; /* Increased from 1.1em */
+    font-size: 1.2em;
 }
 
 .close {
     color: #e6f3ff;
     float: right;
-    font-size: 32px; /* Increased from 28px */
+    font-size: 32px;
     font-weight: bold;
     transition: all 0.3s;
 }
@@ -205,34 +205,67 @@ body {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
+        padding: 15px;
     }
 
     .logo {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
+        height: 80px;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        top: 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .card {
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .footer {
+        padding: 5px;
+        font-size: 0.9em;
     }
 }
 
-#outreach .card {
-    background: rgba(0, 26, 77, 0.8);
-    border: 2px solid #00ffff;
-}
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2em;
+    }
 
-#outreach h3 {
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff;
-}
+    .navbar a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
 
-.project-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
+    .content {
+        padding: 10px;
+        font-size: 1em;
+    }
 
-.small-image {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+    .modal-content {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .footer {
+        padding: 5px;
+        font-size: 0.8em;
+    }
 }
